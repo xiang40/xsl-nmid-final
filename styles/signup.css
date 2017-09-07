@@ -199,9 +199,21 @@ a.signin:active{
     font-weight: 700;
     line-height: normal;
 }
-.feedback_button_icon{
+.feedback_button_svg{
+	background: url(../images/feedback.svg);
 	display: inline-block;
     vertical-align: middle;
     width: 18px;
     height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+a.feedback_button_svg:hover {
+	background:url(../images/feedback_hover.svg);
+	display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
