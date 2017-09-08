@@ -1,3 +1,6 @@
+*{
+	font-family: "Helvetica Neue",Helvetica;
+}
 body{
 	background: #f7fafc;
 	vertical-align: middle;
@@ -6,14 +9,13 @@ body{
 p.logo{
 	text-align: center;
 	background-image: url(../images/logo.png);
-	margin: auto;	
-    width: 160px;
-    height: 74px;
-    background-size: contain;
+	margin: auto;
+	width: 160px;height: 74px;
+	background-size: contain;
 }
 .slogan{
 	text-align: center;
-    color: #555555;
+	color: #555555;
 }
 .logo{
 	margin: auto;
@@ -25,7 +27,7 @@ p.logo{
 	position: relative;
 	top: 64px;
 	margin: 25px 0px;
-    font-weight: 400;
+	font-weight: 400;
     font-size: 18px;
 }
 .body_slection{
@@ -39,7 +41,6 @@ p.logo{
 	border-bottom-style: solid;
 	border-bottom-color: #0F88EB;
 	padding-bottom: 5px;
-
 	text-decoration: none;
 	color: #0F88EB;
 }
@@ -48,12 +49,12 @@ p.logo{
 	color: #555555;
 	opacity: .7;/*使登录字体变得灰色*/
 	margin-left: 30px;
+	
+	transition: .2s color;
+	cursor: pointer;
 }
-a.signin:active{		
-	text-decoration: none;
-	border-bottom: solid;
-	border-color: blue;
-	border-bottom-width:2px;
+.signin:hover {
+	color: #222222;
 }
 .message{
 	position: relative;
@@ -61,10 +62,9 @@ a.signin:active{
 	width: 300px;
 	height: 145px;
 	display: inline-block;
-
-    border: 1px solid #d5d5d5;
-    border-radius: 3px;
-    overflow: hidden;/*把input收入框模型中*/
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+	overflow: hidden;/*把input收入框模型中*/
 }
 
 .input_message input{
@@ -72,12 +72,10 @@ a.signin:active{
     border-bottom-width: 1px;
     border-bottom-color: #d5d5d5;
     outline: medium;
-
     width: 100%;
     height: 100%;
     /*display: inline-block;*/
     font-weight: normal;
-
     padding: 1.2em 0.8em;
 }
 
@@ -109,6 +107,9 @@ a.signin:active{
 	color: #FFFFFF;
 	outline: medium;
 }
+.button:hover {
+	background: #55abed;
+}
 
 .signup_agreement{
 	font-size: 13px;
@@ -127,30 +128,51 @@ a.signin:active{
 	text-decoration: none;
 }
 .office{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
-.download{
+
+/*下载App与关闭二维码部分*/
+#download p {
 	width: 300px;
 	height: 40px;
-	border-radius: 3px;
-	font-weight: normal;
+    margin: 0 auto 80px auto;
+    font-weight: normal;
 	font-size: 15px;	
 	color: #5FA6EA;
-	background-color: transparent;
-	border-color: #5FA6EA;
-	border-width: 1px;
-	border-style: solid;
-	outline: medium;
+    border: 1px solid #9dc3e7;
+    line-height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
 }
-.download_div{
-	margin-bottom: 88px; 
+#download-img {
+    position: relative;
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: -360px;
+    top: -80px;
+    padding: 5px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px #ddd;
+    transform: translate(0,50px);
+    transition: all .3s;
+    z-index: -1;
 }
-
-
+#download-img div {
+	position: relative;
+    width: 232px;
+    height: 232px;
+    background: url(../images/qr-code.png) no-repeat;
+    background-size: cover;
+    margin: 34px;
+}
 
 .footer {
 	font-size: 12px;
 	color: #AEBDC9;
+	padding-top: 50px;
 }
 .footer a:link {
 	text-decoration: none;
