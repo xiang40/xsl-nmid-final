@@ -4,8 +4,7 @@
     <meta charset="utf-8">
 	<title>知乎 - 与世界分享你的知识、经验和见解</title>
 	<link rel="stylesheet" type="text/css" href="styles/signup.css">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">	
-	<script src="scripts/ommouse.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <div>
@@ -15,7 +14,7 @@
 
     <div class="body_slection">
     	<a class="signup" href="#">注册</a>
-    	<a class="signin" href="#" onmouseover="change_bgcolor('signin','#555555')">登录</a>
+    	<a class="signin" href="#">登录</a>
     </div>
 
     <form method="POST">    
@@ -34,7 +33,7 @@
 
 	<div class="body_input">
         <div>
-        	<input class="button" type="submit" value="注册知乎" onmouseover="change_bgcolor('button','#55abed')"/>
+        	<input class="button" type="submit" value="注册知乎"/>
         </div>
 
         <p class="signup_agreement">点击「注册」按钮，即代表你同意<a id="protocol" href="#">《知乎协议》</a></p>
@@ -43,8 +42,11 @@
         	<p><a href="#">注册机构号</a></p>
         </div>
 
-        <div class="download_div">
-        	<input class="download" type="submit" name="download" value="下载知乎App">
+        <div id="download">
+        	<p>下载知乎App</p>
+        </div>
+        <div id="download-img"">
+        	<div></div>
         </div>
     
     
@@ -78,5 +80,7 @@
 		    </span>
 		</button>
 	</div>
+	<script src="scripts/addLoadEvent.js"></script>
+	<script src="scripts/signup.js"></script>
 </body>
 </html>
